@@ -1,9 +1,9 @@
-KITSUNE_PATH = ../../../../../../bin
+KITSUNE_PATH = ../../../../../bin
 KTCC = $(KITSUNE_PATH)/bin/ktcc
-KTLIB = $(KITSUNE_PATH)/lib/libkitsunhe.a
+KTLIB = $(KITSUNE_PATH)/lib/libkitsune.a
 
 KT_CFLAGS = -fpic -I$(KITSUNE_PATH)/include
-KT_LDFLAGS = -L$(KITSUNE_PATH) -lkitsune -ldl
+KT_LDFLAGS = -L$(KITSUNE_PATH)/lib -lkitsune -ldl
 
 SOURCE = ex1.c
 CFLAGS = -O2 -fomit-frame-pointer $(KT_CFLAGS)
